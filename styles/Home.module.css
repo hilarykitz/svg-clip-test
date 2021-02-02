@@ -1,0 +1,82 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  margin-left: 0.5rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.secretImage {
+  background-image: url('https://pyxis.nymag.com/v1/imgs/0a0/ce9/044c84e2d9ffe79963062d389f90aea657-06-allison-janney.rsocial.w1200.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-size: fit;
+  clip-path: url(#clip-svg);
+  transition: all 0.45s ease-in-out;
+  /* mask: url(#clip-svg);
+  mask-type: luminance;
+  mask-type: alpha; */
+}
+
+.circle {
+  transition: 0.45s ease-in-out;
+  stroke-linejoin: round;
+  /* animation: grow linear forwards 7s; */
+  transform-origin: center;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

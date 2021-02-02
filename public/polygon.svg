@@ -1,0 +1,10 @@
+<svg width="0" height="0">
+            <defs>
+              <clipPath id="clip-svg">
+                <circle className={circle} cx={clip} cy={clip2} r={0.3 * getRandomInt(0, clip2)} />
+                <circle className={circle} cx={clip3} cy={clip4} r={0.2 * getRandomInt(0, clip4)} />
+                    
+                <polyline className={circle} points={polyPonies || "0 20 50 80"} id="polypoints"></polyline>
+              </clipPath>
+            </defs>
+          </svg>
